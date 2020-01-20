@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3194" started-at="2020-01-18T21:39:33Z" finished-at="2020-01-18T21:39:36Z">
+  <suite name="Suite" duration-ms="3104" started-at="2020-01-20T04:49:19Z" finished-at="2020-01-20T04:49:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3194" started-at="2020-01-18T21:39:33Z" finished-at="2020-01-18T21:39:36Z">
+    <test name="Test" duration-ms="3104" started-at="2020-01-20T04:49:19Z" finished-at="2020-01-20T04:49:22Z">
       <class name="com.w2a.testcase.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcase.LoginTest@3159c4b8]" name="setUp" is-config="true" duration-ms="6060" started-at="2020-01-19T03:09:27Z" finished-at="2020-01-19T03:09:33Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcase.LoginTest@5a8806ef]" name="setUp" is-config="true" duration-ms="12885" started-at="2020-01-20T10:19:06Z" finished-at="2020-01-20T10:19:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LoginAsBankManager()[pri:0, instance:com.w2a.testcase.LoginTest@3159c4b8]" name="LoginAsBankManager" duration-ms="3160" started-at="2020-01-19T03:09:33Z" finished-at="2020-01-19T03:09:36Z">
+        <test-method status="PASS" signature="LoginAsBankManager()[pri:0, instance:com.w2a.testcase.LoginTest@5a8806ef]" name="LoginAsBankManager" duration-ms="3093" started-at="2020-01-20T10:19:19Z" finished-at="2020-01-20T10:19:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAsBankManager -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.testcase.LoginTest@3159c4b8]" name="tearDown" is-config="true" duration-ms="544" started-at="2020-01-19T03:09:36Z" finished-at="2020-01-19T03:09:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.testcase.LoginTest@5a8806ef]" name="tearDown" is-config="true" duration-ms="587" started-at="2020-01-20T10:19:22Z" finished-at="2020-01-20T10:19:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.w2a.testcase.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
