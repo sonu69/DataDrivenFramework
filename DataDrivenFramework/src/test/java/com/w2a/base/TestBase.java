@@ -7,6 +7,8 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -40,6 +42,7 @@ public class TestBase {
 
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
+
 			}
 			else if(config.getProperty("browser").equalsIgnoreCase("fireox")) {
 
@@ -56,12 +59,26 @@ public class TestBase {
 
 
 
+	public boolean isElementPresent(By by) {
+
+		try {
+			driver.findElement(by);
+			return true;
+
+		}
+
+		catch(NoSuchElementException e) {
+			return false;
+		}
+	}
+
+
 
 	@AfterSuite
 	public void tearDown() {
 
 		if(driver!=null) {
-		driver.quit();
+			driver.quit();
 		}
 	}
 }

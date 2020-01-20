@@ -1,0 +1,94 @@
+12:17:10,377 DEBUG org.apache.http.client.protocol.RequestAddCookies<strong>{1}</strong>:122 - CookieSpec selected: standard
+12:17:10,383 DEBUG org.apache.http.client.protocol.RequestAuthCache<strong>{1}</strong>:76 - Auth cache not set in the context
+12:17:10,384 DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager<strong>{1}</strong>:249 - Connection request: [route: {s}->https://raw.githubusercontent.com:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+12:17:10,395 DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager<strong>{1}</strong>:282 - Connection leased: [id: 0][route: {s}->https://raw.githubusercontent.com:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+12:17:10,397 DEBUG org.apache.http.impl.execchain.MainClientExec<strong>{1}</strong>:234 - Opening connection {s}->https://raw.githubusercontent.com:443
+12:17:10,401 DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator<strong>{1}</strong>:138 - Connecting to raw.githubusercontent.com/151.101.192.133:443
+12:17:10,402 DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory<strong>{1}</strong>:335 - Connecting socket to raw.githubusercontent.com/151.101.192.133:443 with timeout 0
+12:17:10,442 DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory<strong>{1}</strong>:388 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+12:17:10,442 DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory<strong>{1}</strong>:389 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+12:17:10,442 DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory<strong>{1}</strong>:393 - Starting handshake
+12:17:10,518 DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory<strong>{1}</strong>:423 - Secure session established
+12:17:10,519 DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory<strong>{1}</strong>:424 -  negotiated protocol: TLSv1.2
+12:17:10,519 DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory<strong>{1}</strong>:425 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+12:17:10,519 DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory<strong>{1}</strong>:433 -  peer principal: CN=www.github.com, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+12:17:10,519 DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory<strong>{1}</strong>:442 -  peer alternative names: [www.github.com, *.github.com, github.com, *.github.io, github.io, *.githubusercontent.com, githubusercontent.com]
+12:17:10,519 DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory<strong>{1}</strong>:446 -  issuer principal: CN=DigiCert SHA2 High Assurance Server CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+12:17:10,520 DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator<strong>{1}</strong>:145 - Connection established 192.168.1.36:50766<->151.101.192.133:443
+12:17:10,521 DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection<strong>{1}</strong>:90 - http-outgoing-0: set socket timeout to 30000
+12:17:10,521 DEBUG org.apache.http.impl.execchain.MainClientExec<strong>{1}</strong>:255 - Executing request GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1
+12:17:10,521 DEBUG org.apache.http.impl.execchain.MainClientExec<strong>{1}</strong>:260 - Target auth state: UNCHALLENGED
+12:17:10,521 DEBUG org.apache.http.impl.execchain.MainClientExec<strong>{1}</strong>:266 - Proxy auth state: UNCHALLENGED
+12:17:10,522 DEBUG org.apache.http.headers<strong>{1}</strong>:135 - http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1
+12:17:10,522 DEBUG org.apache.http.headers<strong>{1}</strong>:138 - http-outgoing-0 >> User-Agent: Mozilla/5.0
+12:17:10,522 DEBUG org.apache.http.headers<strong>{1}</strong>:138 - http-outgoing-0 >> Connection: keep-alive
+12:17:10,522 DEBUG org.apache.http.headers<strong>{1}</strong>:138 - http-outgoing-0 >> Host: raw.githubusercontent.com
+12:17:10,523 DEBUG org.apache.http.headers<strong>{1}</strong>:138 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+12:17:10,523 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/versions.properties HTTP/1.1[\r][\n]"
+12:17:10,523 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 >> "User-Agent: Mozilla/5.0[\r][\n]"
+12:17:10,523 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+12:17:10,523 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+12:17:10,523 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+12:17:10,523 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 >> "[\r][\n]"
+12:17:10,740 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+12:17:10,740 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+12:17:10,740 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Content-Length: 723[\r][\n]"
+12:17:10,740 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+12:17:10,740 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+12:17:10,740 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+12:17:10,740 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+12:17:10,741 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+12:17:10,741 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+12:17:10,741 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "ETag: W/"32eca6b216a09d4fc59e0710041a40111ad70bb06707206a469fc3bad0219302"[\r][\n]"
+12:17:10,741 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+12:17:10,741 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "X-Geo-Block-List: [\r][\n]"
+12:17:10,741 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Via: 1.1 varnish-v4[\r][\n]"
+12:17:10,741 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+12:17:10,741 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "X-GitHub-Request-Id: AA24:3F8D:289668:2B27CE:5E2530B1[\r][\n]"
+12:17:10,741 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+12:17:10,741 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Date: Mon, 20 Jan 2020 06:47:10 GMT[\r][\n]"
+12:17:10,742 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+12:17:10,742 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "X-Served-By: cache-del21724-DEL[\r][\n]"
+12:17:10,742 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "X-Cache: HIT[\r][\n]"
+12:17:10,742 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "X-Cache-Hits: 1[\r][\n]"
+12:17:10,742 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "X-Timer: S1579502831.543839,VS0,VE211[\r][\n]"
+12:17:10,742 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Vary: Authorization,Accept-Encoding, Accept-Encoding[\r][\n]"
+12:17:10,742 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+12:17:10,742 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "X-Fastly-Request-ID: 88e03fa78359834a2dd6167044ebbdcdd192bf28[\r][\n]"
+12:17:10,742 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Expires: Mon, 20 Jan 2020 06:52:10 GMT[\r][\n]"
+12:17:10,742 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "Source-Age: 278[\r][\n]"
+12:17:10,742 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "[\r][\n]"
+12:17:10,745 DEBUG org.apache.http.headers<strong>{1}</strong>:124 - http-outgoing-0 << HTTP/1.1 200 OK
+12:17:10,745 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Connection: keep-alive
+12:17:10,745 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Content-Length: 723
+12:17:10,745 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+12:17:10,745 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+12:17:10,745 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+12:17:10,745 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << X-Content-Type-Options: nosniff
+12:17:10,745 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << X-Frame-Options: deny
+12:17:10,745 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+12:17:10,745 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << ETag: W/"32eca6b216a09d4fc59e0710041a40111ad70bb06707206a469fc3bad0219302"
+12:17:10,745 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Cache-Control: max-age=300
+12:17:10,746 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << X-Geo-Block-List: 
+12:17:10,746 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Via: 1.1 varnish-v4
+12:17:10,746 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Content-Encoding: gzip
+12:17:10,746 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << X-GitHub-Request-Id: AA24:3F8D:289668:2B27CE:5E2530B1
+12:17:10,746 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Accept-Ranges: bytes
+12:17:10,746 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Date: Mon, 20 Jan 2020 06:47:10 GMT
+12:17:10,746 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Via: 1.1 varnish
+12:17:10,746 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << X-Served-By: cache-del21724-DEL
+12:17:10,746 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << X-Cache: HIT
+12:17:10,746 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << X-Cache-Hits: 1
+12:17:10,746 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << X-Timer: S1579502831.543839,VS0,VE211
+12:17:10,746 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Vary: Authorization,Accept-Encoding, Accept-Encoding
+12:17:10,747 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Access-Control-Allow-Origin: *
+12:17:10,747 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << X-Fastly-Request-ID: 88e03fa78359834a2dd6167044ebbdcdd192bf28
+12:17:10,747 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Expires: Mon, 20 Jan 2020 06:52:10 GMT
+12:17:10,747 DEBUG org.apache.http.headers<strong>{1}</strong>:127 - http-outgoing-0 << Source-Age: 278
+12:17:10,750 DEBUG org.apache.http.impl.execchain.MainClientExec<strong>{1}</strong>:284 - Connection can be kept alive indefinitely
+12:17:10,754 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d][0x95][0xcb]n[0xdb]0[0x10]E[0xf7][0xfe][\n]"
+12:17:10,754 DEBUG org.apache.http.wire<strong>{1}</strong>:72 - http-outgoing-0 << "[0x2][0xd9][0xb4][0x8b]P|H[0xa4]d[0x80][0x9b]>WA[0x17][0xed][0xf][0xc8]6m[0xb][0x91]M[0x83][0x92][0xe3][0xb6]_[0xdf][0x19][0xbe][0xa2][0x18]-[0xd0][0xe5]=[0x1a][0x92][0xd7][0x1c][0xde][0xf1][0x3][0xf9]q[0x1c]&[0xb2][0x1f]FK[0xb6][0xee]<[0xf7][0xc3]y"[0xf3][0xd1][0x92][0xe7][0xb3][0xbb][0x9d][0xc9][0x8b][0xf5][0xd3][0xe0][0x0][0xed][0x9d]';?[0xa0]&[0xef]6[0xc3][0xb9][0xf7][0xbf][0xde][0xc3][0x82][0xd3][0xa5][0x9f][0x87][\r][0xac][0xbd][\r][0xf3]1[0xac][0xdb]:[0xef][0xed]tq[0xe7][0xdd]p>[0x90][0x8d]w[0xb7][0xc9][0xfa][0xbc][0xcf]j[0xf5]@>D[0xb4]&_[0x9d];[0xc0][0xca][0x8f]G[0xef]N[0x96]<[0x92]Oa[0xfb]5[0xd9][0x6][0x10][0xf][0x83][0xfa][0xef][0xee][0xea][0xb7]vM[0x8e][0xf3]|YW[0xd5][0xf2]+[\r]b[0xb8][0x9e][0xa8][0xf3][0x87]j[0x7][0x86]G[0xd7][0xef][0xa6]U[0xac]i[0x99]i[0x19]eTv[0xad][0xa6]\%[0xaa];[0xa3][0xbb]@[0xeb][0x86][0xca]B[[0xa3][0xdb]@YM9kr[0xb1]6Z#nUCk[0x96][0xa9]2Z[0x5][0xca]:[0xca]E[0xd9][0xa3]1[0xba]A[0xac]5[0xa3][0xfc][0xb5][0xba]6[0xba][0xe]Xt[0xb4][0xd4]J[0xa3]%B[0xd5]J[0xaa][0xda][0xbc][0xb1]0[0x82][0xd6][0xa5][0x86][0xbf]Q[0xc]U6[0xa6]:TuZ[0xa7]ZT"+[0x8d][0x8a]g[0xa5]Pe[0xeb][0xaa][0x1]%[0xf3]y[0xaa]F[0xa5]s[0xa5]D[0x95]OW[0xe8]E[0x96][0xf3][0xd0][0x8b],[0xe7][0xa1][0x17])[0xdf]t[0xf3][0xc9][0xfd][0x1e][0xc6][0xb1]'_[0x6]o[0xf7][0xee][0xe7][0xa2][0x9f][0x7][0xbb]}vm[0xe7][0x4][0xfd]<[0xc0][0xc3][0xb9]n(<[0xa5][0xea][0x14][0xb7][0xa8][0x16][0xb]*oG[0xdb]OvZ[0xed][0xe3][0xbe]Z[0x18]F[0x5][0xdc]~[0x1][0xfc][0x1e][0xb0];[0x0]w[0xf5]v[0x9]\[0x17][0x0]hU[0xde]Ci[0x4][0xd0][0xa4][0x2][0xd4]=h[0xee]A[0x8d][0x0]ZX[0x96][0xc8]{[0x10][0x9c][0x8a]EEp[0xca][0x17] 8][0x80]&8][0x82][0xe0]t[0x9][0x82][0xd3]%[0x8]N[0xe1][0x99]g[0x1f]Mp[0x8a]`[0x99][0xb5]o[0x17][0xeb][0xfb]EO[0x1c][0xea][0xff][0xe9]I([0x9c][0xdc]~[0xbe][0xf5][0xde]VA[0xe5][0xd0][0xc5][0xe5][0xaf][0x1d][\n]"
+12:17:10,755 DEBUG org.apache.http.wire<strong>{1}</strong>:86 - http-outgoing-0 << "[0x1f][0x15]d[0xa3][0xc4]Kw[0xab][0x8]![0x19]%][0xad]N[0x10]rQ[0xb2][0xc5][0x5]K[0x14][0x82][0xf1][0x9a]-)[0x12][0x15][0xcb]h[0xb1]\[0x9b]"[0x11][0xce][0x80][0xbb][0xb][0xf9][0x88]"[0x5]"[0x8a][0x94][0x87](R[0x1c][0xa2]Hi[0x88]"[0x85]![0x8a][0x94][0x85](R[0x14][0xa2][0x8]I[0x90][0xe9][0x9c][0x14][0x84][0xf0][0xa5]F[0x7][0xd9]q[0x8d][0xe]d2Z[0xa3][0x3][0x91].[0xa3]F[0x7] [0x96][0xed]y[0x1a][0xb6][0xde][0xe1]-[0x93][0xcf][0xbb][0xc3]r[0x16][0x9e]&[0xb][0xe0][0x9f][0x8d][0xda][0xd9][0x17];[0xe2][0xe1][0xf4][0x94]w[0x8]I[0xb2][0xe7][0xc7][0xeb]T[0x15][0xf6][0x88][0x9b]T[0xb3]s[0xe3]T[0xdd][0xec]&5n[0x85][0xb4][0xc]I[0xc5][0xf1]W!*[0x13][0x92][0xe3][0xf3][0xe]$MG[0x81][\r][0x8b]$[\r]F![0xb]IC[0x91][0xc3]@K5i[0x1e]r[0xd9][0xc1][0x83][0xc][0xcb][0xea][0xda]\[0xbc]}[0x84][0xff][0x98][0xb9][0x1f]G[0xbb][0x8b]P[0x18]E[0xb9][0xe6]0^B[\r]7[\r][0x8c]k[0xd1]uQ2[0x3][0x13][0xb9]a*[0x9a][0x93][0xad][0x91]0\e[0x17][0xa5][0xc0][0xe][0xc2][0xbc]nU([0x16][0xcc]p[0x90][0x2][0xe6][0xdd][0x1f]2Xo5[0xd9][0x6][0x0][0x0]"
+12:17:10,755 DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager<strong>{1}</strong>:314 - Connection [id: 0][route: {s}->https://raw.githubusercontent.com:443] can be kept alive indefinitely
+12:17:10,755 DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager<strong>{1}</strong>:320 - Connection released: [id: 0][route: {s}->https://raw.githubusercontent.com:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+12:17:25,879 DEBUG devpinoyLogger<strong>{1}</strong>:21 - Login success
