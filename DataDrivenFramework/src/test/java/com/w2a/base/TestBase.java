@@ -13,12 +13,17 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.w2a.utilities.ExcelReader;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -30,8 +35,15 @@ public class TestBase {
 	public static Properties OR = new Properties();
 	public static FileInputStream fis;
 	public static Logger log = Logger.getLogger("devpinoyLogger");
-	
+	public static WebDriverWait wait;
+	public  ExtentHtmlReporter htmlReporter;
+	public ExtentReports extent;
+	public ExtentTest test;
 
+
+	
+	
+	
 	@BeforeSuite
 	public void setUp() throws IOException {
 		if(driver==null) {
@@ -50,13 +62,17 @@ public class TestBase {
 			driver.manage().window().maximize();
 			driver.get(config.getProperty("url"));
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),TimeUnit.SECONDS);
+			wait = new WebDriverWait(driver,10);
+			htmlReporter = new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Reports/sonu"+".html"));
+			extent = new ExtentReports();
+			extent.attachReporter(htmlReporter);
 		}
 	}
 
-	
-	public boolean isElementPresent(By by) {
+
+	public boolean isElementPresent(WebElement element) {
 		try {
-			driver.findElement(by);
+			element.isDisplayed();
 			return true;
 		}
 		catch(NoSuchElementException e) {
@@ -64,7 +80,7 @@ public class TestBase {
 		}
 	}
 
-	
+
 	public String getData(int row, int cell) throws IOException {
 		File fl = new File(System.getProperty("user.dir")+"/src/test/resources/excel/Test.xlsx");
 		FileInputStream fis = new FileInputStream(fl);
@@ -74,11 +90,11 @@ public class TestBase {
 		return data;
 	}
 
-	
+
 	@AfterSuite
 	public void tearDown() {
 		if(driver!=null) {
-			
+			driver.quit();
 		}
 	}
 }
